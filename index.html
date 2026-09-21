@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aryan Browser</title>
+  <!-- Links your app settings -->
+  <link rel="manifest" href="manifest.json">
+</head>
+<body>
+  <h1>This is my chromium Open-Source Browser</h1>
+  <p>This is my PWA app running inside Chrome!</p>
+
+  <script>
+    // Tells Chrome this website can be installed as an app
+    if ('serviceWorker' in navigator) {
+      navigator.serviceWorker.register('sw.js');
+    }
+  </script>
+</body>
+</html>
